@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agregar Nuevo Usuario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/nuevoUsuario.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>Agregar Nuevo Usuario</h1>
+
+    <form id="nuevoUsuarioForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Agregar Usuario</button>
+    </form>
+    <a href="usuarios.html">Volver</a>
+  </main>
+
+  <script type="module" src="../js/nuevoUsuario.js"></script>
+</body>
+</html>

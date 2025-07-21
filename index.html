@@ -2,30 +2,59 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Formulario de contacto</title>
-  <link rel="stylesheet" href="estilos.css">
+  <title>Formulario de Contacto - Proyecto Redes 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Formulario de contacto</h1>
 
-  <form id="contactForm">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+  <main class="container">
+    <h1>Proyecto Redes 2</h1>
+    <section class="description">
+      <h2>Práctica para el Segundo Parcial</h2>
+      <ol>
+        <li>
+          <strong>Montar un servidor Apache:</strong> <br>
+          Crear un formulario con los siguientes campos: <em>nombre, email y mensaje</em>.<br>
+          <span class="optional">* El uso de CSS o librerías como Bootstrap o Tailwind es opcional pero valorado.</span>
+        </li>
+        <li>
+          <strong>Montar un servidor Node.js usando HTTP:</strong><br>
+          Implementar las operaciones HTTP básicas (<code>POST</code>, <code>PUT</code>, <code>PATCH</code>, <code>DELETE</code>) y responder con los códigos de estado correspondientes (<code>200</code>, <code>201</code>, <code>400</code>, <code>500</code>, etc.).<br>
+          <span class="note">* Usar Express reduce la puntuación, ya que facilita el desarrollo.</span>
+        </li>
+        <li>
+          <strong>Conectar el formulario al servidor Node.js:</strong><br>
+          El formulario debe enviar los datos al servidor Node.js, que los mostrará en la consola.
+        </li>
+        <li>
+          <strong class="optional">[Opcional] Conexión con base de datos:</strong><br>
+          El servidor Node.js puede registrar los datos recibidos en una base de datos.<br>
+          <span class="optional">* Se valorará el uso de Docker para montar la base de datos.</span>
+        </li>
+        <li>
+          <strong class="optional">[Opcional] Uso de Git y GitHub:</strong><br>
+          Se valorará el uso de repositorios bien organizados con commits claros y manejo de ramas.
+        </li>
+        <li>
+          <strong class="optional">[Opcional] Implementación de Docker:</strong><br>
+          Se darán puntos extra si Docker se usa en cualquier parte del proyecto.
+        </li>
+      </ol>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+      <h3>Informe y Presentación</h3>
+      <p>
+        Deberán entregar un <strong>informe detallado</strong> explicando el trabajo realizado, acompañado de capturas de pantalla del desarrollo.<br>
+        Además, el día lunes deberán <strong>defender el informe</strong> demostrando lo siguiente:
+      </p>
+      <ul>
+        <li>Montar el servidor Apache2 (cliente).</li>
+        <li>Montar el servidor Node.js (backend).</li>
+        <li>Realizar la conexión entre cliente y servidor, mostrando el registro de datos.</li>
+      </ul>
+      <a href="pages/usuarios.html">Empezar!</a>
+    </section>
+  </main>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" required></textarea><br><br>
-
-    <button type="submit">Enviar</button>
-  </form>
-
-  <hr>
-
-  <button onclick="obtenerContactos()">Cargar contactos</button>
-  <div id="listaContactos"></div>
-
-  <script src="script.js"></script>
 </body>
 </html>
